@@ -1,21 +1,11 @@
-import { PageContainer } from '@ant-design/pro-components';
-import { Access, useAccess } from '@umijs/max';
-import { Button } from 'antd';
+import React from 'react';
 
-const AccessPage: React.FC = () => {
-  const access = useAccess();
+const Access:React.FC=()=>{
   return (
-    <PageContainer
-      ghost
-      header={{
-        title: '权限示例',
-      }}
-    >
-      <Access accessible={access.canSeeAdmin}>
-        <Button>只有 Admin 可以看到这个按钮</Button>
-      </Access>
-    </PageContainer>
-  );
-};
+    <div>
+      Access
+    </div>
+  )
+}
 
-export default AccessPage;
+export default Access
